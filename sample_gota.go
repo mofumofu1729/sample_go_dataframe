@@ -17,10 +17,10 @@ func main() {
     fil := df.Filter(
         dataframe.F{"COL.1", series.Eq, "b"},
     )
-    
+
     fmt.Println("{}", fil)
 
-    f, err := os.Open("/home/yusuke/Desktop/sample.csv")
+    f, err := os.Open("./sample.csv")
     if err != nil {
         fmt.Println("error")
     }
